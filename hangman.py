@@ -139,7 +139,6 @@ class HangmanGame:
         for frame in self.buttons_frame.winfo_children():
             for button in frame.winfo_children():
                 button.configure(state=tk.NORMAL)
-
         self.reset_button.pack(pady=(10, 0))
 
         if hasattr(self, 'game_over_label') and self.game_over_label.winfo_exists():
