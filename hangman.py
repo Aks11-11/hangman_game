@@ -99,7 +99,6 @@ class HangmanGame:
 
         self.update_word_display()
         self.check_game_over()
-
     def update_word_display(self):
         displayed_word = " ".join([letter if letter in self.correct_guesses else "_" for letter in self.secret_word])
         self.word_display.config(text=displayed_word)
