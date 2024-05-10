@@ -109,7 +109,6 @@ class HangmanGame:
             self.display_game_over_message("Congratulations, you've won!")
         elif self.attempts_left == 0:
             self.display_game_over_message(f"Game over! The word was: {self.secret_word}")
-
     def display_game_over_message(self, message):
         stylish_font = ("Arial", 18, "italic")
         button_bg = "#4a7a8c"
