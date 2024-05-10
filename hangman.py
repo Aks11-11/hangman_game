@@ -54,10 +54,8 @@ class HangmanGame:
             button = tk.Button(lower_frame, text=letter, command=lambda l=letter: self.guess_letter(l), width=4,
                                height=2, bg=button_bg, fg=button_fg, font=button_font)
             button.pack(side="left", padx=2, pady=2)
-
     def choose_secret_word(self):
         return random.choice(self.word_list)
-
     def update_hangman_canvas(self):
         self.hangman_canvas.delete("all")
         stages = [self.draw_head, self.draw_body, self.draw_left_arm, self.draw_right_arm,
@@ -65,7 +63,6 @@ class HangmanGame:
         for i in range(len(self.incorrect_guesses)):
             if i < len(stages):
                 stages[i]()
-
     def draw_head(self):
         self.hangman_canvas.create_oval(125, 50, 185, 110, outline="black")
 
