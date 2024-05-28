@@ -1,7 +1,5 @@
 import tkinter as tk
 import random
-
-
 class HangmanGame:
     def __init__(self, master):
         self.master = master
