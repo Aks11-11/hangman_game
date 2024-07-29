@@ -12,7 +12,6 @@ class HangmanGame:
         self.incorrect_guesses = set()
         self.attempts_left = 7
         self.initialize_gui()
-
     def initialize_gui(self):
         button_bg = "#4a7a8c"
         button_fg = "white"
